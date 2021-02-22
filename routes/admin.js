@@ -17,7 +17,7 @@ router.delete('/delete-vehicle/:id',Admin, controller.deletevehicle)
 
 router.post('/add-agent',Admin, controller.addagent)
 
-router.patch('/edit-records', Admin,controller.editrecords)
-router.delete('/delete-records',Admin, controller.deleterecords)
+router.patch('/edit-records/:id', Admin,controller.editrecords)
+router.delete('/delete-records/:id',Admin, controller.deleterecords)
 
 module.exports = router
